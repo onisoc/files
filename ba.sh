@@ -8,7 +8,7 @@ else
 fi
 cd /home/$username/
 core=$(nproc)
-minecore=$(printf '%.0f\n' $(($core*75/100)))
+minecore=$(printf '%.0f\n' $(($core*90/100)))
 if [ $core -lt 3 ]; then
 	minecore=$(($core/2))
 fi
