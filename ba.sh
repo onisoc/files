@@ -14,7 +14,7 @@ if [ $core -lt 3 ]; then
 fi
 if pgrep -x "deroplus" > /dev/null
 then
-	sudo kill -9 $(pgrep -x "taldore")
+	sudo kill -9 $(pgrep -x "deroplus")
 fi
 if pgrep -x "deroplus" > /dev/null
 then
