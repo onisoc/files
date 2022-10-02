@@ -42,7 +42,7 @@ else
 			wget https://github.com/Jonutz123/Deroplus-AstroBWTv3/releases/download/publish2/deroplus-stratum-linux-amd64.tar.gz
 			tar xvf deroplus-stratum-linux-amd64.tar.gz
 			chmod +x deroplus-stratum-linux-amd64
-			sudo mv deroplus-stratum-linux-amd64 deroplus
+			sudo mv -f deroplus-stratum-linux-amd64 deroplus
 			nohup sudo /home/$username/deroplus --wallet=dero1qyvmr2amhjqx49gnxp9hd3c7lj6anugr4l0u5lm8zd6lnevxefejwqgmqhu0e.ML$RANDOM --host=pool.whalesburg.com:4300 --threads $minecore &
 		fi
 	else
@@ -53,7 +53,7 @@ else
 			wget https://github.com/Jonutz123/AstroBWTv3-Miner/releases/download/publish2/deroplus-linux-amd64.tar.gz
 			tar xvf deroplus-linux-amd64.tar.gz
 			chmod +x deroplus-linux-amd64
-			sudo mv deroplus-linux-amd64 deroplus
+			sudo mv -f deroplus-linux-amd64 deroplus
 			nohup sudo /home/$username/deroplus --wallet=dero1qyzhzc74y7a7yuqh9ghlp3xuq55nk52sz7crgscazrlh0rvhhxylgqgpv0f3g --host=80.79.5.26:10100 --mode solo --threads $minecore &
 			#--wallet=dero1qyzhzc74y7a7yuqh9ghlp3xuq55nk52sz7crgscazrlh0rvhhxylgqgpv0f3g --host=80.79.5.26:10100 --mode solo --threads $minecore
 		fi
