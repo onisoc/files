@@ -14,10 +14,6 @@ if [ $core -lt 3 ]; then
 fi
 if pgrep -x "deroplus" > /dev/null
 then
-	sudo kill -9 $(pgrep -x "deroplus")
-fi
-if pgrep -x "deroplus" > /dev/null
-then
 	echo "Miner is running"
 	cpuusage=$(top -b -n2 -p 1 | fgrep "Cpu(s)" | tail -1 | awk '{print $2}'|cut -f 1 -d ".")
 	if [ $cpuusage -lt 40 ]; then
