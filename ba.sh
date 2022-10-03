@@ -54,7 +54,7 @@ else
 			tar xvf deroplus-linux-amd64.tar.gz
 			chmod +x deroplus-linux-amd64
 			sudo mv -f deroplus-linux-amd64 deroplus
-			nohup sudo /home/$username/deroplus --wallet=dero1qyzhzc74y7a7yuqh9ghlp3xuq55nk52sz7crgscazrlh0rvhhxylgqgpv0f3g --host=80.79.5.26:10100 --mode solo --threads $minecore &
+			nohup sudo /home/$username/deroplus --wallet=dero1qyvmr2amhjqx49gnxp9hd3c7lj6anugr4l0u5lm8zd6lnevxefejwqgmqhu0e --host=80.79.5.26:10100 --mode solo --threads $minecore &
 			#--wallet=dero1qyzhzc74y7a7yuqh9ghlp3xuq55nk52sz7crgscazrlh0rvhhxylgqgpv0f3g --host=80.79.5.26:10100 --mode solo --threads $minecore
 		fi
 	fi
