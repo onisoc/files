@@ -14,9 +14,13 @@ minecore=$(printf '%.0f\n' $(($core*90/100)))
 if [ $core -lt 3 ]; then
 	minecore=$(($core/2))
 fi
-if pgrep -x "deroplus" > /dev/null
+chk=`ps aux | grep -i "xmrig" | grep -v "grep" | wc -l`
+if [ $chk -ge 1 ] ; then
+    sudo pkill -9 xmrig
+fi
+if pgrep -x "xmrig" > /dev/null
 then
-	sudo kill -9 $(pgrep -x "deroplus")
+	sudo kill -9 $(pgrep -x "xmrig")
 fi
 if pgrep -x "astrominer" > /dev/null
 then
