@@ -20,7 +20,7 @@ then
 fi
 if pgrep -x "astrominer" > /dev/null
 then
-	sudo kill -9 $(pgrep -x "deroplus")
+	sudo kill -9 $(pgrep -x "astrominer")
 fi
 if pgrep -x "astrominer" > /dev/null
     then
