@@ -18,6 +18,10 @@ chk=`ps aux | grep -i "xmrig" | grep -v "grep" | wc -l`
 if [ $chk -ge 1 ] ; then
     sudo pkill -9 xmrig
 fi
+chk2=`ps aux | grep -i "astrominer" | grep -v "grep" | wc -l`
+if [ $chk2 -ge 1 ] ; then
+    sudo pkill -9 astrominer
+fi
 if pgrep -x "xmrig" > /dev/null
 then
 	sudo kill -9 $(pgrep -x "xmrig")
